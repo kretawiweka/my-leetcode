@@ -1,4 +1,4 @@
-// Last updated: 4/28/2026, 11:06:37 PM
+// Last updated: 4/28/2026, 11:10:43 PM
 1/**
 2 * Definition for a binary tree node.
 3 * function TreeNode(val, left, right) {
@@ -16,12 +16,12 @@
 15        if (left > right) return null
 16
 17        const mid = Math.floor((left + right) / 2)
-18
-19        const node = new TreeNode(nums[mid])
-20        node.left = build(left, mid-1)
-21        node.right = build(mid+1, right)
+18        const node = new TreeNode(nums[mid])
+19        node.left = build(left, mid-1)
+20        node.right = build(mid+1, right)
+21
 22        return node
-23    }  
+23    }
 24
 25    return build(0, nums.length - 1)
 26};
